@@ -18,10 +18,9 @@ divisor(X,Y,D) :-
 	Y=0,
 	D is X.
 
+evaluating(Expression,Expression) :-
+	number(Expression).
 evaluating(Expression,Ressult) :-
-	number(Expression),
-	Ressult is Expression,
-	plus(Expression),
-	Ressult is Expression.
-
+	Expression=X+Y,
+	plus(X,Y,Ressult).
 
