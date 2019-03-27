@@ -1,0 +1,1 @@
+git log --since=1/11/2018 --until=28/11/2019 --no-merges --format=%B > CHANGELOG.TXT
